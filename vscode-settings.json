@@ -140,11 +140,13 @@
   "editor.snippetSuggestions": "top",
   "emmet.triggerExpansionOnTab": true,
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 0,
   "update.mode": "none",
   "extensions.ignoreRecommendations": false,
+  "editor.autoClosingQuotes": "always",
 
   "terminal.integrated.fontFamily": "Dank Mono",
   "terminal.integrated.tabs.enabled": true,
@@ -155,10 +157,6 @@
   "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.mouseWheelZoom": false,
 
-  "terminal.integrated.tabs.hideTabLabels": false,
-  "terminal.integrated.tabs.showActivity": true,
-  "terminal.integrated.showTabsOnNewTerminal": "always",
-
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "chat.commandCenter.enabled": false,
@@ -166,5 +164,5 @@
   "animations.Install-Method": "Custom UI Style",
   "custom-ui-style.external.imports": [
     "file:///home/souvik/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
-  ]
+  ],
 }
