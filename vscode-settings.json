@@ -66,8 +66,8 @@
     ".monaco-editor .scroll-decoration": "display: none", // Hides scroll decoration shadows
     ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important", // Centers file labels
     ".title .monaco-icon-label:after": "margin-right: 0", // Removes right margin in title label
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px", // Adds left padding to editor title
-    ".title .monaco-icon-label.file-icon": "margin: 0 60px", // Adds horizontal margin to title icon
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 0px", // Adds left padding to editor title
+    ".title .monaco-icon-label.file-icon": "margin: 0 0px", // Adds horizontal margin to title icon
     ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #ffaffc 10%, #DA70D6 100%)", // Gives cursor a gradient effect
 
     // Terminal Customisation
