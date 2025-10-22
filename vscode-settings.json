@@ -38,11 +38,9 @@
   "editor.cursorBlinking": "expand",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorWidth": 2,
-  "window.zoomLevel": 1.3,
   "workbench.productIconTheme": "material-product-icons",
   "editor.wordWrap": "on",
   "editor.lineHeight": 2,
-  "editor.suggestLineHeight": 2,
   "debug.console.lineHeight": 2,
   "notebook.markdown.lineHeight": 2,
   "notebook.output.lineHeight": 2,
@@ -54,5 +52,7 @@
   "breadcrumbs.enabled": false,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorStyleInactive": "line",
-  "terminal.integrated.lineHeight": 1.4
+  "terminal.integrated.lineHeight": 1.4,
+  "editor.inlineSuggest.edits.showCollapsed": true,
+  "window.zoomLevel": 1.5
 }
