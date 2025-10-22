@@ -28,7 +28,6 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Dank Mono'",
   "editor.wordWrap": "on",
-  "editor.mouseWheelZoom": true,
   "editor.formatOnPaste": true,
   "editor.autoClosingBrackets": "always",
   "editor.autoClosingComments": "always",
@@ -49,9 +48,7 @@
   "editor.renderFinalNewline": "on",
   "editor.scrollbar.verticalScrollbarSize": 10,
   "editor.scrollbar.horizontalScrollbarSize": 10,
-  "editor.scrollBeyondLastLine": false,
   "editor.showFoldingControls": "always",
-  "editor.stickyScroll.enabled": false,
   "editor.tabCompletion": "on",
   "editor.trimWhitespaceOnDelete": true,
   "editor.unfoldOnClickAfterEndOfLine": true,
@@ -74,6 +71,15 @@
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.tabSizing": "shrink",
   "workbench.statusBar.visible": false,
+  "editor.fastScrollSensitivity": 1,
+  "workbench.list.fastScrollSensitivity": 1,
+  "terminal.integrated.fastScrollSensitivity": 1,
+  "editor.stickyScroll.maxLineCount": 1,
+  "editor.stickyScroll.enabled": false,
+  "workbench.list.scrollByPage": true,
+  "workbench.tree.enableStickyScroll": false,
+  "editor.scrollBeyondLastLine": false,
+  "terminal.integrated.stickyScroll.maxLineCount": 1,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.compactFolders": false,
@@ -120,5 +126,5 @@
   "css.format.spaceAroundSelectorSeparator": true,
 
   //Custom Ui Customisation
-  "custom-ui-style.font.sansSerif": "Dank Mono" // Uses Dank Mono font for UI text
+  "custom-ui-style.font.sansSerif": "Dank Mono"
 }
