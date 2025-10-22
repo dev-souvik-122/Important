@@ -55,5 +55,7 @@
   "terminal.integrated.lineHeight": 1.4,
   "editor.inlineSuggest.edits.showCollapsed": true,
   "window.zoomLevel": 1.5,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "terminal.integrated.stickyScroll.enabled": false
+
 }
