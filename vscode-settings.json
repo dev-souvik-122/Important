@@ -73,6 +73,7 @@
   "breadcrumbs.enabled": false,
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.tabSizing": "shrink",
+  "workbench.statusBar.visible": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.compactFolders": false,
