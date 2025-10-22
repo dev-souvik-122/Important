@@ -73,7 +73,7 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.statusBar.visible": false,
   "editor.fastScrollSensitivity": 1,
-  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.renderIndentGuides": "always",
   "workbench.tree.indent": 20,
   "workbench.list.fastScrollSensitivity": 1,
   "terminal.integrated.fastScrollSensitivity": 1,
