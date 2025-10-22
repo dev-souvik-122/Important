@@ -1,19 +1,25 @@
 {
   "workbench.colorTheme": "Ocean Space Italic",
   "workbench.colorCustomizations": {
-    // === THEME-SPECIFIC OVERRIDES ===
     "[Ocean Space Italic]": {
       // Theme-specific color overrides
-      "menu.background": "#0f111a", // Sets menu background to dark gray-purple
-      "menu.foreground": "#E5E5E5", // Sets menu text color to light gray
-      "menu.selectionBackground": "#0b0d14", // Sets selection background in menu
-      "menu.selectionForeground": "#FFFFFF", // Sets selection text color in menu
-      "menu.border": "#0b0d14", // Defines border color for menu
-      "tab.activeBackground": "#0b0d14", // Background for active tab
-      "tab.inactiveBackground": "#0f111a", // Background for inactive tabs
-      "editor.selectionBackground": "#ffffff10", // Light transparent highlight for selections
-      "editor.wordHighlightBackground": "#ffffff10", // Light transparent highlight for matching words
-      "editor.wordHighlightStrongBackground": "#ffffff10" // For read/write variables,
+      "menu.background": "#0f111a",
+      "menu.foreground": "#E5E5E5",
+      "menu.selectionBackground": "#0b0d14",
+      "menu.selectionForeground": "#FFFFFF",
+      "menu.border": "#0b0d14",
+      "tab.activeBackground": "#0b0d14",
+      "tab.inactiveBackground": "#0f111a",
+      "editor.selectionBackground": "#ffffff10",
+      "editor.wordHighlightBackground": "#ffffff10",
+      "editor.wordHighlightStrongBackground": "#ffffff10",
+      "editor.selectionHighlightBackground": "#ffffff10",
+
+      // === Matching Tag / Bracket Highlight Fix ===
+      "editorBracketMatch.border": "#ffffff10",
+      "editorBracketMatch.background": "#ffffff10",
+      "editorBracketHighlight.unexpectedBracket.foreground": "#ffffff10",
+      "editor.linkedEditingBackground": "#ffffff10"
     }
   },
   "material-icon-theme.hidesExplorerArrows": true,
