@@ -24,6 +24,7 @@
   "workbench.layoutControl.enabled": false, // Hides layout control (layout presets menu)
   "chat.commandCenter.enabled": false, // Disables the chat command center
   "workbench.editor.enablePreview": false, // Disables preview tabs, opens files fully
+  "material-icon-theme.hidesExplorerArrows": true, //Disable arrow icons of folder structure
   "workbench.colorCustomizations": {
     // === THEME-SPECIFIC OVERRIDES ===
     "[Ocean Space Italic]": {
@@ -76,10 +77,7 @@
     ".terminal-tabs-actions-container": "display: flex !important;" // Ensures terminal tab actions show correctly
   },
   "custom-ui-style.font.sansSerif": "Dank Mono", // Uses Dank Mono font for UI text
-  "custom-ui-style.external.imports": [
-    // Imports external scripts for animations
-    "file:///home/souvik/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
-  ],
+  "custom-ui-style.external.imports": [],
   "animations.Install-Method": "Custom UI Style", // Marks installation method for custom UI
 
   // === EDITOR SETTINGS ===
@@ -152,5 +150,6 @@
   "git.decorations.enabled": true, // Enables Git change indicators in Explorer
 
   // === EMMET & INTELLISENSE ===
-  "emmet.triggerExpansionOnTab": true
+  "emmet.triggerExpansionOnTab": true,
+  "json.schemas": []
 }
