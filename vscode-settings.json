@@ -16,6 +16,7 @@
       "editor.wordHighlightStrongBackground": "#ffffff10" // For read/write variables,
     }
   },
+  "material-icon-theme.hidesExplorerArrows": true,
 
   "editor.renderLineHighlight": "none", // Disables line highlight for current line
   "workbench.iconTheme": "material-icon-theme",
@@ -38,7 +39,7 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeLensFontFamily": "Dank Mono",
   "window.zoomLevel": 1.5,
-  "editor.foldingImportsByDefault": true,
+  "editor.foldingImportsByDefault": false,
   "editor.guides.highlightActiveIndentation": false,
   "editor.inlayHints.fontFamily": "Dank Mono",
   "editor.inlayHints.padding": true,
@@ -72,6 +73,8 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.statusBar.visible": false,
   "editor.fastScrollSensitivity": 1,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 20,
   "workbench.list.fastScrollSensitivity": 1,
   "terminal.integrated.fastScrollSensitivity": 1,
   "editor.stickyScroll.maxLineCount": 1,
@@ -126,5 +129,6 @@
   "css.format.spaceAroundSelectorSeparator": true,
 
   //Custom Ui Customisation
-  "custom-ui-style.font.sansSerif": "Dank Mono"
+  "custom-ui-style.font.sansSerif": "Dank Mono",
+  "json.schemas": []
 }
