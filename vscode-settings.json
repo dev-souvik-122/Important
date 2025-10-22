@@ -1,30 +1,5 @@
 {
-  // === WORKBENCH SETTINGS ===
-  "workbench.colorTheme": "Ocean Space Italic", // Sets the color theme for VS Code
-  "workbench.activityBar.location": "default", // Positions the Activity Bar (default = left side)
-  "workbench.editor.showTabs": "multiple", // Enables multiple editor tabs at once
-  "workbench.statusBar.visible": false, // Hides the status bar at the bottom
-  "workbench.startupEditor": "none", // Disables the startup welcome or new file page
-  "workbench.tips.enabled": false, // Disables VS Code tips on startup
-  "workbench.sideBar.location": "left", // Positions the sidebar on the left
-  "workbench.iconTheme": "material-icon-theme", // Uses Material Icon Theme for files and folders
-  "workbench.productIconTheme": "material-product-icons", // Uses Material icons for VS Code UI elements
-  "workbench.tree.enableStickyScroll": false, // Disables sticky scroll for tree views like Explorer
-  "workbench.tree.renderIndentGuides": "none", // Hides vertical indent guide lines in the file explorer
-  "workbench.tree.indent": 20, // Sets indentation level for tree items in the Explorer
-  "explorer.compactFolders": false, // Shows each folder on a separate line
-  "explorer.confirmDragAndDrop": false, // Disables confirmation when dragging files
-  "explorer.confirmDelete": false, // Disables confirmation when deleting files
-  "explorer.decorations.badges": true, // Shows Git and other badges in Explorer
-  "window.zoomLevel": 1.5, // Scales the entire UI by 1.5x for readability
-  "window.customTitleBarVisibility": "never", // Hides custom title bar visibility
-  "window.titleBarStyle": "native", // Uses VS Code's custom title bar style
-  "window.menuBarVisibility": "hidden", // Uses compact menu bar mode
-  "window.commandCenter": false, // Hides the Command Center at the top
-  "workbench.layoutControl.enabled": false, // Hides layout control (layout presets menu)
-  "chat.commandCenter.enabled": false, // Disables the chat command center
-  "workbench.editor.enablePreview": false, // Disables preview tabs, opens files fully
-  "material-icon-theme.hidesExplorerArrows": true, //Disable arrow icons of folder structure
+  "workbench.colorTheme": "Ocean Space Italic",
   "workbench.colorCustomizations": {
     // === THEME-SPECIFIC OVERRIDES ===
     "[Ocean Space Italic]": {
@@ -36,123 +11,113 @@
       "menu.border": "#0b0d14", // Defines border color for menu
       "tab.activeBackground": "#0b0d14", // Background for active tab
       "tab.inactiveBackground": "#0f111a", // Background for inactive tabs
-      "editor.selectionBackground": "#ffffff25", // Light transparent highlight for selections
-      "editor.wordHighlightBackground": "#ffffff25" // Light transparent highlight for matching words
+      "editor.selectionBackground": "#ffffff10", // Light transparent highlight for selections
+      "editor.wordHighlightBackground": "#ffffff10", // Light transparent highlight for matching words
+      "editor.wordHighlightStrongBackground": "#ffffff10" // For read/write variables,
     }
   },
 
-  // === APC ELECTRON SETTINGS ===
-  "apc.electron": {
-    // Configures the VS Code Electron window appearance
-    "titleBarStyle": "hiddenInset", // Hides title bar with inset buttons on macOS
-    "trafficLightPosition": { "x": 20, "y": 16 } // Adjusts position of window control buttons
-  },
-
-  // === CUSTOM UI STYLE ===
-  "custom-ui-style.stylesheet": {
-    // Customizes VS Code UI elements via CSS
-    ".notification-toast": "box-shadow: none !important", // Removes shadow from notifications
-    ".quick-input-widget.show-file-icons": "box-shadow: none !important", // Removes shadows from quick input
-    ".quick-input-widget": "top: 25vh !important", // Moves quick input box slightly lower
-    ".quick-input-list .scrollbar": "display: none", // Hides scrollbar in quick input
-    ".monaco-action-bar.quick-input-inline-action-bar": "display: none", // Hides inline quick input actions
-    ".editor-widget.find-widget": "box-shadow: none; border-radius: 4px", // Removes shadow from find widget
-    ".quick-input-titlebar": "background: #100B15 !important", // Sets dark background for quick input title
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none", // Removes editor title bottom border
-    ".monaco-scrollable-element > .shadow.top": "display: none", // Removes top scroll shadow
-    ".sidebar .title-label": "padding: 0 !important", // Removes padding in sidebar title
-    ".sidebar": "border: none !important", // Removes border around sidebar
-    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important", // Removes focus outlines in explorer
-    ".monaco-list-row.focused": "outline: none !important", // Removes focus outline from list items
-    ".monaco-editor .scroll-decoration": "display: none", // Hides scroll decoration shadows
-    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important", // Centers file labels
-    ".title .monaco-icon-label:after": "margin-right: 0", // Removes right margin in title label
-    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 0px", // Adds left padding to editor title
-    ".title .monaco-icon-label.file-icon": "margin: 0 0px", // Adds horizontal margin to title icon
-    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #ffaffc 10%, #DA70D6 100%)", // Gives cursor a gradient effect
-
-    // Terminal Customisation
-    ".terminal-tabs-container": "display: flex !important; align-items: center !important; z-index: 10 !important;", // Ensures terminal tabs align properly
-    ".terminal-tabs-tab": "display: flex !important; opacity: 1 !important; visibility: visible !important;", // Ensures terminal tabs are visible
-    ".terminal-tabs-actions-container": "display: flex !important;" // Ensures terminal tab actions show correctly
-  },
-  "custom-ui-style.font.sansSerif": "Dank Mono", // Uses Dank Mono font for UI text
-  "custom-ui-style.external.imports": [],
-  "animations.Install-Method": "Custom UI Style", // Marks installation method for custom UI
-
-  // === EDITOR SETTINGS ===
-  "editor.fontFamily": "Dank Mono", // Sets the editor font to Dank Mono
-  "editor.fontSize": 14, // Sets text size in the editor
-  "editor.fontLigatures": true, // Enables programming ligatures
-  "editor.lineHeight": 2.5, // Increases line spacing
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      { "scope": "comment", "settings": { "fontStyle": "italic" } }
-    ]
-  }, // Makes comments italic
-  "editor.minimap.enabled": false, // Disables minimap preview on the right
-  "editor.multiCursorModifier": "ctrlCmd", // Uses Ctrl/Cmd for multiple cursors
-  "editor.cursorBlinking": "expand", // Makes cursor expand while blinking
-  "editor.cursorStyle": "line", // Uses line-style cursor
-  "editor.stickyScroll.enabled": false, // Disables sticky scroll in the editor
-  "editor.colorDecorators": true, // Enables color decorators for color codes
-  "editor.codeLens": false, // Hides code lens info above functions
-  "editor.links": true, // Enables clickable links in code
-  "editor.matchBrackets": "never", // Disables bracket highlighting
-  "editor.parameterHints.enabled": true, // Shows parameter hints during typing
-  "editor.lightbulb.enabled": "off", // Turns off suggestion lightbulb icon
-  "editor.hover.enabled": true, // Enables hover info on symbols
-  "editor.lineNumbers": "on", // Displays line numbers
-  "editor.tabSize": 4, // Sets indentation size to 4 spaces
-  "editor.detectIndentation": false, // Prevents automatic detection of indentation
-  "editor.showFoldingControls": "mouseover", // Shows folding arrows only on hover
-  "editor.guides.indentation": true, // Displays indentation guides
-  "editor.renderWhitespace": "none", // Hides whitespace characters
   "editor.renderLineHighlight": "none", // Disables line highlight for current line
-  "editor.occurrencesHighlight": "singleFile", // Highlights occurrences in current file only
-  "editor.selectionHighlight": true, // Highlights other instances of selected text
-  "editor.scrollbar.horizontal": "auto", // Enables horizontal scrollbar as needed
-  "editor.scrollbar.vertical": "auto", // Enables vertical scrollbar as needed
-  "editor.overviewRulerBorder": false, // Hides border around overview ruler
-  "editor.hideCursorInOverviewRuler": true, // Hides cursor indicator in ruler
-  "editor.mouseWheelZoom": true, // Enables zoom with mouse wheel + Ctrl
-  "editor.quickSuggestions": { "other": "on" }, // Enables inline code suggestions
-  "editor.suggestOnTriggerCharacters": true, // Suggests completions when typing
-  "editor.tabCompletion": "on", // Enables tab to complete snippets
-  "editor.snippetSuggestions": "inline", // Shows snippets at top of suggestions
-  "editor.formatOnSave": true, // Auto-formats code when saving
-  "editor.formatOnPaste": true, // Auto-formats code when pasting
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // Sets Prettier as default formatter
-  "editor.autoClosingQuotes": "always", // Automatically closes quotes
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'Dank Mono'",
+  "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.formatOnPaste": true,
   "editor.autoClosingBrackets": "always",
   "editor.autoClosingComments": "always",
   "editor.autoClosingDelete": "always",
+  "editor.autoClosingOvertype": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.autoIndentOnPaste": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.codeLensFontFamily": "Dank Mono",
+  "window.zoomLevel": 1.5,
+  "editor.foldingImportsByDefault": true,
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.inlayHints.fontFamily": "Dank Mono",
+  "editor.inlayHints.padding": true,
+  "editor.lineHeight": 2,
+  "editor.linkedEditing": true,
+  "editor.overtypeCursorStyle": "line",
+  "editor.renderFinalNewline": "on",
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.scrollbar.horizontalScrollbarSize": 10,
+  "editor.scrollBeyondLastLine": false,
+  "editor.showFoldingControls": "always",
+  "editor.stickyScroll.enabled": false,
+  "editor.tabCompletion": "on",
+  "editor.trimWhitespaceOnDelete": true,
+  "editor.unfoldOnClickAfterEndOfLine": true,
+  "editor.wrapOnEscapedLineFeeds": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontLigatures": true,
+  "editor.formatOnType": true,
+  "diffEditor.codeLens": true,
+  "editor.minimap.showSlider": "always",
+  "editor.inlineSuggest.fontFamily": "Dank Mono",
+  "editor.inertialScroll": true,
+  "editor.smoothScrolling": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "workbench.list.smoothScrolling": true,
+  "files.autoSaveDelay": 0,
+  "files.insertFinalNewline": true,
+  "breadcrumbs.enabled": false,
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editor.tabSizing": "shrink",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.decorations.colors": false,
+  "search.showLineNumbers": true,
+  "search.decorations.colors": false,
+  "search.smartCase": true,
+  "scm.alwaysShowActions": true,
+  "scm.alwaysShowRepositories": true,
+  "scm.compactFolders": false,
+  "terminal.integrated.fontFamily": "Dank Mono",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.stickyScroll.enabled": false,
+  "terminal.integrated.tabs.defaultIcon": "terminal-bash",
+  "terminal.integrated.tabs.focusMode": "singleClick",
+  "terminal.integrated.tabs.location": "right",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyleInactive": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.hideOnStartup": "always",
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
+  "notebook.formatOnSave.enabled": true,
+  "notebook.insertFinalNewline": true,
+  "notebook.markdown.lineHeight": 2,
+  "notebook.markup.fontFamily": "Dank Mono",
+  "notebook.multiCursor.enabled": true,
+  "notebook.outline.showCodeCells": true,
+  "notebook.output.fontFamily": "Dank Mono",
+  "notebook.output.wordWrap": true,
+  "notebook.showFoldingControls": "always",
+  "chat.checkpoints.showFileChanges": true,
+  "chat.disableAIFeatures": true,
+  "chat.editor.fontFamily": "Dank Mono",
+  "chat.editor.lineHeight": 2,
+  "chat.editor.wordWrap": "on",
+  "chat.fontFamily": "Dank Mono",
+  "chat.fontSize": 14,
+  "css.format.spaceAroundSelectorSeparator": true,
 
-  // === FILES & SAVING ===
-  "files.trimTrailingWhitespace": true, // Removes trailing spaces on save
-  "files.insertFinalNewline": true, // Ensures file ends with a newline
-  "files.autoSave": "afterDelay", // Enables auto-save after delay
-  "files.autoSaveDelay": 0, // Sets auto-save delay to 0ms (instant save)
-  "update.mode": "none", // Disables automatic updates
-
-  // === TERMINAL SETTINGS ===
-  "terminal.integrated.fontFamily": "Dank Mono", // Uses Dank Mono font in terminal
-  "terminal.integrated.tabs.enabled": true, // Enables tabs in integrated terminal
-  "terminal.integrated.lineHeight": 1.3, // Adjusts line height for terminal text
-  "terminal.integrated.fontSize": 14, // Sets terminal text size
-  "terminal.integrated.fontWeight": "normal", // Sets normal font weight
-  "terminal.integrated.stickyScroll.enabled": false, // Disables sticky scroll for terminal
-  "terminal.integrated.fontLigatures.enabled": true, // Enables font ligatures in terminal
-  "terminal.integrated.mouseWheelZoom": false, // Disables zoom with mouse wheel in terminal
-  "terminal.integrated.cursorStyle": "line", //Terminal cursor stle set to line
-  "terminal.integrated.cursorStyleInactive": "line", //Terminal cursor style when inactive
-  "terminal.integrated.cursorWidth": 2, // Expands Emmet abbreviations using Tab key
-
-  // === GIT & SOURCE CONTROL ===
-  "scm.diffDecorations": "all", // Shows diff decorations for all changes
-  "git.decorations.enabled": true, // Enables Git change indicators in Explorer
-
-  // === EMMET & INTELLISENSE ===
-  "emmet.triggerExpansionOnTab": true,
-  "json.schemas": []
+  //Custom Ui Customisation
+  "custom-ui-style.font.sansSerif": "Dank Mono" // Uses Dank Mono font for UI text
 }
