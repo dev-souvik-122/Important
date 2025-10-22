@@ -18,8 +18,8 @@
   "explorer.decorations.badges": true, // Shows Git and other badges in Explorer
   "window.zoomLevel": 1.5, // Scales the entire UI by 1.5x for readability
   "window.customTitleBarVisibility": "never", // Hides custom title bar visibility
-  "window.titleBarStyle": "custom", // Uses VS Code's custom title bar style
-  "window.menuBarVisibility": "compact", // Uses compact menu bar mode
+  "window.titleBarStyle": "native", // Uses VS Code's custom title bar style
+  "window.menuBarVisibility": "hidden", // Uses compact menu bar mode
   "window.commandCenter": false, // Hides the Command Center at the top
   "workbench.layoutControl.enabled": false, // Hides layout control (layout presets menu)
   "chat.commandCenter.enabled": false, // Disables the chat command center
@@ -119,11 +119,14 @@
   "editor.quickSuggestions": { "other": "on" }, // Enables inline code suggestions
   "editor.suggestOnTriggerCharacters": true, // Suggests completions when typing
   "editor.tabCompletion": "on", // Enables tab to complete snippets
-  "editor.snippetSuggestions": "top", // Shows snippets at top of suggestions
+  "editor.snippetSuggestions": "inline", // Shows snippets at top of suggestions
   "editor.formatOnSave": true, // Auto-formats code when saving
   "editor.formatOnPaste": true, // Auto-formats code when pasting
   "editor.defaultFormatter": "esbenp.prettier-vscode", // Sets Prettier as default formatter
   "editor.autoClosingQuotes": "always", // Automatically closes quotes
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingComments": "always",
+  "editor.autoClosingDelete": "always",
 
   // === FILES & SAVING ===
   "files.trimTrailingWhitespace": true, // Removes trailing spaces on save
